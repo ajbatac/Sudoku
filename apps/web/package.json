@@ -4,7 +4,7 @@
     "dev": "bunx --bun vike dev",
     "build": "vike build",
     "preview": "vike preview",
-    "deploy": "npx wrangler pages deploy dist --project-name=sudokuh"
+    "deploy": "npx wrangler pages deploy dist"
   },
   "dependencies": {
     "vike": "^0.4.228",
