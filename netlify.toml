@@ -1,8 +1,8 @@
 [build]
   command = "bun run build"
-  publish = "dist/client"
+  publish = "dist"
 
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "/client/index.html"
   status = 200
