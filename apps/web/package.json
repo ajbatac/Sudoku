@@ -2,7 +2,7 @@
   "name": "web",
   "scripts": {
     "dev": "bunx --bun vike dev",
-    "build": "vike build && npx wrangler pages deploy dist",
+    "build": "vike build",
     "preview": "vike preview"
   },
   "dependencies": {
