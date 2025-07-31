@@ -1,0 +1,23 @@
+# Use an official Node.js runtime as a parent image
+FROM node:18-alpine
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Copy package.json and bun.lock to the working directory
+COPY package.json bun.lock ./
+
+# Install Bun
+RUN npm install -g bun
+
+# Install dependencies
+RUN bun install
+
+# Copy the rest of the application code to the working directory
+COPY . .
+
+# Expose the port the app runs on
+EXPOSE 3000
+
+# Command to run the application in development mode
+CMD ["bun", "run", "dev"]
